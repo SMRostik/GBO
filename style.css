@@ -1,9 +1,15 @@
+@font-face {
+    font-family: 'Roboto'; 
+    src: url(font/Roboto.ttf); 
+}
+
 html,
 body {
     height: 100%;
 }
 body{
     background: #ecf0f1;
+    font-family: "Roboto";
 }
 .wrapper{
     display: flex;
@@ -71,11 +77,7 @@ body{
     padding-left: 35px;
     color: #fff;
 }
-.search-button:hover,
-.search-button:visited{
-    text-decoration: none;
-    color: #fff;
-}
+
 
 .phone{
     background: url(img/phone.png) no-repeat 0 50%;
@@ -105,7 +107,11 @@ body{
 .cart:visited{
     color: #fff;
 }
-.cart:hover{
+.cart:hover,
+.product-button:hover,
+.slider-button:hover,
+.search-button:hover,
+.search-button:visited{
     color: #fff;
     text-decoration: none;
 }
@@ -156,11 +162,7 @@ body{
     text-decoration: none;
     color: #fff;
 }
-.slider-button:hover{
-    text-decoration: none;
-    color: #fff;
-}
-.content{}
+
 .left-menu{
     border: 1px solid #e74c3c;
     margin: 0 -15px;
@@ -238,19 +240,13 @@ body{
     color: #fff;
     font-size: 1.5em;
 }
-.product-button:hover{
-    color: #fff;
-    text-decoration: none;
-}
 .footer{
     background: #2a80b9;
 }
-
 .footer-body{
     height: 100px;
     min-height: 100px;
 }
-
 @media (max-width: 767px){
     .logo .outer-wrapper{
         width: 100%;
